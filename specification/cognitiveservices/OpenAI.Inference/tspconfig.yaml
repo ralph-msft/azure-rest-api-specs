@@ -23,7 +23,7 @@ options:
   "@azure-tools/typespec-csharp":
     package-dir: "Azure.AI.OpenAI"
     namespace: "Azure.AI.OpenAI"
-    clear-output-folder: true
+    clear-output-folder: false
     model-namespace: false
   # https://github.com/Azure/azure-rest-api-specs/issues/24497
   # "@azure-tools/typespec-java":
