@@ -79,6 +79,16 @@ model ImageOperationResponse {
   error?: Foundations.Error;
 }
 
+@doc("Ralph testing")
+@added(ServiceApiVersions.v2023_06_01_Preview)
+model RalphModel {
+  @doc("Ralph testing")
+  id: string;
+
+  @doc("Ralph testing")
+  awesomeness: uint64;
+}
+
 @lroStatus
 @doc("The state of a job or item.")
 @added(ServiceApiVersions.v2023_06_01_Preview)
