@@ -56,11 +56,3 @@ model Deployment {
   @key
   deploymentId: string;
 }
-
-@doc("Coming soon")
-model RalphFoo {
-  @doc("Nothing to see here move along")
-  id: string;
-  @doc("Nothing to see here move along")
-  age: int8;
-}
