@@ -215,9 +215,9 @@ model ChatCompletions {
     represented as seconds since the beginning of the Unix epoch of 00:00 on 1 Jan 1970.
     """)
   @projectedName("json", "created")
-  @projectedName("csharp", "InternalCreatedSecondsAfterUnixEpoch")
   @projectedName("java", "createdAt")
-  created: int32;
+  @encode(DateTimeKnownEncoding.unixTimestamp, int32)
+  created: utcDateTime;
 
   @doc("""
     The collection of completions choices associated with this completions response.
